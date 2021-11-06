@@ -47,17 +47,17 @@ class Config:
     REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", False)
     EDIT_TITLE = os.environ.get("EDIT_TITLE", True)
     #others
-    
+
     RECORDING_DUMP=os.environ.get("RECORDING_DUMP", False)
     RECORDING_TITLE=os.environ.get("RECORDING_TITLE", False)
-    TIME_ZONE = os.environ.get("TIME_ZONE", "Asia/Jakarta")    
+    TIME_ZONE = os.environ.get("TIME_ZONE", "Asia/Jakarta")
     IS_VIDEO=is_enabled(os.environ.get("IS_VIDEO", 'True'))
     IS_LOOP=is_enabled(os.environ.get("IS_LOOP", 'True'))
     DELAY=int(os.environ.get("DELAY", '10'))
     PORTRAIT=is_enabled(os.environ.get("PORTRAIT", 'False'))
     IS_VIDEO_RECORD=is_enabled(os.environ.get("IS_VIDEO_RECORD", 'True'))
-    DEBUG=is_enabled(os.environ.get("DEBUG", False))
-    PTN=is_enabled(os.environ.get("PTN", False))
+    DEBUG=is_enabled(os.environ.get("DEBUG", 'False'))
+    PTN=is_enabled(os.environ.get("PTN", 'False'))
 
     #Quality vars
     E_BITRATE=os.environ.get("BITRATE", False)
